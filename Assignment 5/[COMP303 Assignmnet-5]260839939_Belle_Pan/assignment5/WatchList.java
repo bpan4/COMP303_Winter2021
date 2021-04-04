@@ -10,7 +10,7 @@ import java.util.Optional;
 /**
  * Represents a sequence of watchables to watch in FIFO order.
  */
-public class WatchList implements Bingeable<Watchable>, Callback{
+public class WatchList implements Bingeable<Watchable>, Observer{
 	
 	private final List<Watchable> aList = new LinkedList<>();
 	private String aName;
